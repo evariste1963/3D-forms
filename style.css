@@ -7,13 +7,13 @@
 }
 
 html {
-  font-size: 60.5%;
+  font-size: 70%;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(31, 7, 7, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(31, 7, 7, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
   perspective: 100rem;
@@ -29,7 +29,7 @@ html {
 }
 
 .forms-wrapper.change {
-  transform: rotateY(100deg);
+  transform: rotateY(80deg);
   left: calc(50% + 25rem);
 }
 
