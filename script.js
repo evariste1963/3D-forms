@@ -1,3 +1,5 @@
+"use strict";
+
 const signUpBtn = document.querySelector(".signup-btn");
 const signInBtn = document.querySelector(".signin-btn");
 const signUpBtn1 = document.querySelector(".signup-btn1");
@@ -46,6 +48,6 @@ menuBtn1.addEventListener("click", (e) => {
 contactBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formsWrapper.classList.add("change2");
-  formsWrapper.classList.remove("change1");
   formsWrapper.classList.remove("change");
+  formsWrapper.classList.remove("change1");
 });
