@@ -13,7 +13,7 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(31, 7, 7, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(31, 7, 7, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
   perspective: 100rem;
@@ -24,25 +24,34 @@ html {
   position: absolute;
   top: calc(50% - 17.5rem);
   left: calc(50% - 25rem);
-  transform: rotateY(10deg);
+  transform: rotateY(0deg);
   transition: transform 0.5s, left 0.5s;
 }
 
 .forms-wrapper.change {
-  transform: rotateY(80deg);
+  transform: rotateY(90deg);
+  left: calc(50% + 25rem);
+}
+
+.forms-wrapper.change1 {
+  transform: rotateY(180deg) translateZ(50rem);
+  left: calc(50% + 25rem);
+}
+
+.forms-wrapper.change2 {
+  transform: rotateY(270deg) translateZ(50rem) translateX(-50rem);
   left: calc(50% + 25rem);
 }
 
 .forms-wrapper form {
   width: 50rem;
   height: 35rem;
-  background-color: rgba(40, 114, 108, 0.8);
+  background-color: rgba(40, 114, 108, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0.1rem, 0.1rem, 0.1rem, #ccc inset, -0.1rem, -0.1rem,
-    0.1rem #ccc inset;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
   position: absolute;
 }
 
@@ -52,6 +61,10 @@ html {
 
 .menu {
   transform: rotateY(180deg) translateZ(50rem) translateX(0rem);
+}
+
+.contact-us {
+  transform: rotateY(90deg) translateZ(25rem) translateX(25rem);
 }
 
 form a {
@@ -65,13 +78,16 @@ form a {
 }
 
 .signup-btn,
-.menu-btn {
+.menu-btn,
+.contact-btn {
   left: 2rem;
   padding: 0.5rem 1rem 0.5rem 3rem;
   border-radius: 100% 0.5rem 0.5rem 100%;
 }
 
-.signin-btn {
+.signin-btn,
+.signup-btn1,
+.menu-btn1 {
   right: 2rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
   border-radius: 0.5rem 100% 100% 0.5rem;
