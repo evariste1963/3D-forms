@@ -8,6 +8,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const contactBtn = document.querySelector(".contact-btn");
 const formsWrapper = document.querySelector(".forms-wrapper");
 
+//rotations
 signUpBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formsWrapper.classList.add("change");
