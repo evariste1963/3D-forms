@@ -1,5 +1,6 @@
 const signUpBtn = document.querySelector(".signup-btn");
 const signInBtn = document.querySelector(".signin-btn");
+const menuBtn = document.querySelector(".menu-btn");
 const formsWrapper = document.querySelector(".forms-wrapper");
 
 signUpBtn.addEventListener("click", e => {
@@ -10,4 +11,9 @@ signUpBtn.addEventListener("click", e => {
 signInBtn.addEventListener("click", e => {
   e.preventDefault();
   formsWrapper.classList.remove("change");
+});
+
+menuBtn.addEventListener("click", e => {
+  e.preventDefault();
+  formsWrapper.classList.add("change");
 });
