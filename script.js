@@ -14,7 +14,7 @@ signUpBtn.addEventListener("click", (e) => {
   formsWrapper.classList.add("change");
   formsWrapper.classList.remove("change1");
   formsWrapper.classList.remove("change2");
-  formsWrapper.classList.remove("change3");
+  
 });
 
 signUpBtn1.addEventListener("click", (e) => {
@@ -22,7 +22,7 @@ signUpBtn1.addEventListener("click", (e) => {
   formsWrapper.classList.add("change");
   formsWrapper.classList.remove("change1");
   formsWrapper.classList.remove("change2");
-  formsWrapper.classList.remove("change3");
+  
 });
 
 signInBtn.addEventListener("click", (e) => {
