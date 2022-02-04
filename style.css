@@ -51,7 +51,9 @@ html {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset,
+    rgba(27, 27, 27, 0.8) 0px 30px 20px -20px;
+
   position: absolute;
 }
 
